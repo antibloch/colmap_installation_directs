@@ -107,7 +107,6 @@ colmap -h
 
 
 
-#-----------------------------------------------------------------------------------------------------
 
 # References:
 - https://askubuntu.com/questions/1510137/error-installing-nvidia-drivers-on-ubuntu-22-04

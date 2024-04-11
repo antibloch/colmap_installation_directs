@@ -1,4 +1,4 @@
-# COLMAP Installation Directions With NVIDIA-GPU Support
+# COLMAP Installation Directions With NVIDIA-GPU Support (Ubuntu)
 
 ```console
 sudo apt-get purge nvidia*
@@ -32,7 +32,7 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-11.8/lib64/
 sudo chmod a+r /usr/local/cuda-11.8/lib64/libcudnn*
 
 sudo nano /home/username/.bashrc
-# Insert in the end of the config file
+# Insert in the end of  .bashrc file
 export PATH="/usr/local/cuda-11.8/bin:$PATH"
 
 

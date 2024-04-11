@@ -101,7 +101,7 @@ sudo make install
 
 
 
-# to verify that colmap is installed with gpu (essential for dense resconstruction), it is documented here:
+# to verify that colmap is installed with cuda (essential for dense resconstruction), it is documented here:
 colmap -h
 ```
 

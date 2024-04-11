@@ -115,10 +115,11 @@ colmap -h
 - https://velog.io/@jhjangjh/Ubuntu-20.04-NVIDIA-CUDA-11.6-%EB%B0%8F-cuDNN-8.5.0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
 
 
-# References Regarding changing nvcc compiler and cudatoolkit version within conda environment
+# References Regarding changing nvcc compiler and cudatoolkit version within conda environment (Handy for Running Deep Learning Repositories)
 - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#conda-installation
 - https://anaconda.org/nvidia/cuda-nvcc
 - https://medium.com/@jeanpierre_lv/installing-pytorch-with-gpu-support-on-ubuntu-a-step-by-step-guide-38dcf3f8f266
+- https://dwijaybane.wordpress.com/2022/04/16/installing-multiple-cudatoolkit-on-ubuntu-using-conda/
 
 
 

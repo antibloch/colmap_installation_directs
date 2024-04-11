@@ -111,8 +111,14 @@ colmap -h
 # References:
 - https://askubuntu.com/questions/1510137/error-installing-nvidia-drivers-on-ubuntu-22-04
 - https://areong.medium.com/build-colmap-on-ubuntu-20-10-809b1f9ed4cf
-
 - https://gist.github.com/primus852/b6bac167509e6f352efb8a462dcf1854
+- https://velog.io/@jhjangjh/Ubuntu-20.04-NVIDIA-CUDA-11.6-%EB%B0%8F-cuDNN-8.5.0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
+
+
+# References Regarding changing nvcc compiler and cudatoolkit version within conda environment
+- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#conda-installation
+- https://anaconda.org/nvidia/cuda-nvcc
+- https://medium.com/@jeanpierre_lv/installing-pytorch-with-gpu-support-on-ubuntu-a-step-by-step-guide-38dcf3f8f266
 
 
 

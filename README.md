@@ -1,5 +1,6 @@
 # COLMAP Installation Directions With NVIDIA-GPU Support
 
+```console
 sudo apt-get purge nvidia*
 sudo apt remove nvidia-*
 sudo rm /etc/apt/sources.list.d/cuda*
@@ -102,17 +103,17 @@ sudo make install
 
 # to verify that colmap is installed with gpu (essential for dense resconstruction), it is documented here:
 colmap -h
-
+```
 
 
 
 #-----------------------------------------------------------------------------------------------------
 
 # References:
-# https://askubuntu.com/questions/1510137/error-installing-nvidia-drivers-on-ubuntu-22-04
-# https://areong.medium.com/build-colmap-on-ubuntu-20-10-809b1f9ed4cf
+- https://askubuntu.com/questions/1510137/error-installing-nvidia-drivers-on-ubuntu-22-04
+- https://areong.medium.com/build-colmap-on-ubuntu-20-10-809b1f9ed4cf
 
-# https://gist.github.com/primus852/b6bac167509e6f352efb8a462dcf1854
+- https://gist.github.com/primus852/b6bac167509e6f352efb8a462dcf1854
 
 
 

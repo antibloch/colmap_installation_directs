@@ -12,6 +12,12 @@ sudo reboot
 
 sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
 
+# for 11.8 cuda toolkit, gcc-9 is feasible so install it via
+sudo apt install gcc-9 g++-9
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 60
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 60
+
+
 # download nvidia toolkit (e.g: 11.8 ->cuda_11.8.0_520.61.05_linux) as run file
 # Continue in case of warning. Afterwards select only toolkit, when following directions in run file
 

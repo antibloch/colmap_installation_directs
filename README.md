@@ -35,6 +35,7 @@ tar xf cudnn-linux-x86_64-8.6.0.163_cuda11-archive.tar.xz
 mv cudnn-linux-x86_64-8.6.0.163_cuda11-archive cuda
 sudo cp -P cuda/include/cudnn*.h /usr/local/cuda-11.8/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-11.8/lib64/
+# if last line doesnot work, then try: sudo cp -P cuda/lib/libcudnn* /usr/local/cuda-11.8/lib64/
 sudo chmod a+r /usr/local/cuda-11.8/lib64/libcudnn*
 
 sudo nano /home/username/.bashrc

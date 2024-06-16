@@ -95,7 +95,7 @@ cd ceres-bin
 cmake ../ceres-solver
 make -j3
 make test
-make install
+sudo make install
 #------------------------------------------------
 
 sudo apt-get install libflann-dev

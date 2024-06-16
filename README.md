@@ -76,6 +76,7 @@ sudo apt install g++-9 gcc-9
 
 
 sudo apt install libatlas-base-dev libsuitesparse-dev
+#-----------X--------------------------------
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
 git checkout 2.0.0   # Check out the latest release.
@@ -84,6 +85,18 @@ cd build-2.0.0
 cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
 make -j3
 sudo make install
+#---------------------------------------------
+
+# if X fails, then try Y
+#------------Y-----------------------------------
+git clone https://ceres-solver.googlesource.com/ceres-solver
+mkdir ceres-bin
+cd ceres-bin
+cmake ../ceres-solver
+make -j3
+make test
+make install
+#------------------------------------------------
 
 sudo apt-get install libflann-dev
 sudo apt-get install libsqlite3-dev

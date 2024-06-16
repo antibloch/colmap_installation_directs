@@ -19,7 +19,7 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 60
 
 
 # download nvidia toolkit (e.g: 11.8 ->cuda_11.8.0_520.61.05_linux) as run file
-# Continue in case of warning. Afterwards select only toolkit, when following directions in run file
+# Continue in case of warning. Afterwards select <ins>only toolkit</ins>, when following directions in run file
 
 sudo sh cuda_11.8.0_520.61.05_linux.run
 

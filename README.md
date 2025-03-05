@@ -1,4 +1,4 @@
-# COLMAP Installation Directions With NVIDIA-GPU Support (Ubuntu)
+# COLMAP Installation Directions With NVIDIA-GPU Support (Ubuntu 22 and 20)
 
 ```console
 sudo apt-get purge nvidia*

@@ -123,6 +123,30 @@ sudo make install
 
 # to verify that colmap is installed with cuda (essential for dense resconstruction), it is documented here:
 colmap -h
+
+
+
+# On ubunut 20, the installaton failed, so I had to to do following:
+# Remove any existing Ceres
+sudo apt-get remove --purge libceres-dev
+
+# Clone the exact version needed for COLMAP
+git clone https://github.com/ceres-solver/ceres-solver.git
+cd ceres-solver
+git checkout 1.14.0  # Use the version COLMAP expects
+
+# Build with all dependencies
+mkdir build && cd build
+cmake .. -DBUILD_SHARED_LIBS=ON
+make -j4
+sudo make install
+sudo ldconfig  # Update linker cache
+
+cd colmap
+mkdir build && cd build
+CC=/usr/bin/gcc-9 CXX=/usr/bin/g++-9 cmake .. -DCeres_DIR=/usr/local/lib/cmake/Ceres -DCMAKE_CUDA_ARCHITECTURES="${arch}"
+make -j4
+sudo make install
 ```
 
 
